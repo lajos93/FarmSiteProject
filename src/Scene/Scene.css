@@ -1,0 +1,55 @@
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent line breaks to allow horizontal scrolling */
+}
+
+.hill {
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backHill {
+  width: 100vw;
+  height: 25vh;
+  left: -15vw;
+  bottom: 35vh;
+  background-image: url('../assets/images/hill.png');
+}
+
+.middleHill {
+  width: 125vw;
+  height: 40vh;
+  left: -65vw;
+  bottom: 20vh;
+  background-image: url('../assets/images/hill.png');
+}
+
+.frontHill {
+  width: 150vw;
+  height: 60vh;
+  left: -15vw;
+  background-image: url('../assets/images/hill.png');
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tree {
+  
+  width: 600vw; /* 2x the original width */
+  max-width: 600px; /* 2x the original max width */
+  height: auto;
+/*   background-image: url('../assets/images/tree.png');
+  background-size: cover;
+  background-repeat: no-repeat; */
+  left: 50%; /* Center the tree horizontally */
+  bottom: 20vh; /* Position relative to the bottom of the viewport */
+  transform: translateX(70%);
+}
