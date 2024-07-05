@@ -1,0 +1,132 @@
+.tree {
+    width: 70vw;
+    max-width: 70vh;
+    height: 70vw;
+    max-height: 70vh;
+    position: relative;
+    /*    left: 1200px; */
+    top: -20%;
+    transform: translate(-50%, -50%);
+    
+}
+
+@media (min-width: 1000px) {
+    .tree {
+        left: 800px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tree {
+        left: 1200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .tree {
+        left: 1400px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .tree {
+        left: 1600px;
+    }
+}
+
+.trunk {
+    /*    width: 40px; */
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background-image: url('../assets/images/tree_5_compressed.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin: auto;
+    /*   margin-top: 150px; */
+
+}
+
+/* Leaves */
+.leaf {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform-origin: bottom center;
+    z-index: 2;
+    background-size: cover;
+    /* Adjust based on your leaf image aspect ratio */
+    background-repeat: no-repeat;
+}
+
+.ver1{
+    background-image: url('../assets/images/largeleaf_2_old_style_4.png');
+}
+.ver2{
+    background-image: url('../assets/images/leaf@0,5x.png');
+ 
+}
+
+/* Individual leaves */
+.leaf1 {
+    top: 10px;
+    left: 20px;
+    transform: rotate(-10deg);
+    
+    /* Image for leaf 1 */
+}
+
+.leaf2 {
+    top: -40px;
+    left: 150px;
+    transform: rotate(310deg);
+    width: 100px;
+    height: 100px;
+}
+
+.leaf3 {
+    top: -35px;
+    left: 250px;
+    transform: rotate(-20deg);
+    /* Image for leaf 1 */
+}
+
+.leaf4 {
+    top: 135px;
+    left: 490px;
+    transform: rotate(375deg);
+    width: 133px;
+    height: 133px;
+}
+
+.leaf5 {
+    top: 190px;
+    left: 20px;
+    transform: rotate(-35deg);
+      /* Image for leaf 1 */
+}
+
+.leaf6 {
+    top: 320px;
+    left: 90px;
+    transform: rotate(-5deg);
+    width: 60px;
+    height: 60px;
+}
+
+.leaf7 {
+    top: 5px;
+    left: 400px;
+    transform: rotate(70deg);
+      /* Image for leaf 1 */
+}
+
+.leaf8 {
+    top: 20px;
+    left: 230px;
+    transform: rotate(340deg);
+    width: 220px;
+    height: 220px;
+
+}

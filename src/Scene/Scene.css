@@ -5,13 +5,14 @@
   background-image: url('../assets/images/bg.jpg');
   background-size: cover;
   background-position: center;
-  overflow-x: scroll; /* Enable horizontal scrolling */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  overflow-x: hidden;
   white-space: nowrap; /* Prevent line breaks to allow horizontal scrolling */
 }
 
 .hill {
   position: absolute;
-  bottom: 0;
+  bottom: -70px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -20,36 +21,44 @@
   width: 100vw;
   height: 25vh;
   left: -15vw;
-  bottom: 35vh;
-  background-image: url('../assets/images/hill.png');
-}
-
-.middleHill {
-  width: 125vw;
-  height: 40vh;
-  left: -65vw;
   bottom: 20vh;
   background-image: url('../assets/images/hill.png');
+  filter: hue-rotate(260deg) saturate(.4)
+}
+
+
+
+
+.middleHill {
+  width: 130vw;
+  height: 45vh;
+  left: -65vw;
+  bottom: -5vh;
+  background-image: url('../assets/images/hill.png');
+  filter: hue-rotate(320deg)  saturate(.4);
+}
+
+@media (max-width: 652px) {
+  .middleHill {
+    width: 160vw;
+    /* This will still apply the same formula for smaller screens */
+    height: 32vh;
+  }
+
+  .backHill {
+    width: 96vw;
+    height: 18vh;
+    left: 5vw;
+  }
 }
 
 .frontHill {
   width: 150vw;
-  height: 60vh;
+  height: 50vh;
   left: -15vw;
   background-image: url('../assets/images/hill.png');
   display: flex;
   justify-content: flex-start;
+  filter: hue-rotate(0deg) ; 
 }
 
-.tree {
-  
-  width: 600vw; /* 2x the original width */
-  max-width: 600px; /* 2x the original max width */
-  height: auto;
-/*   background-image: url('../assets/images/tree.png');
-  background-size: cover;
-  background-repeat: no-repeat; */
-  left: 50%; /* Center the tree horizontally */
-  bottom: 20vh; /* Position relative to the bottom of the viewport */
-  transform: translateX(70%);
-}
