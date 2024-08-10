@@ -10,9 +10,39 @@
   white-space: nowrap; /* Prevent line breaks to allow horizontal scrolling */
 }
 
+.title{
+  position:absolute;
+  margin: 120px;
+ 
+}
+.title .text{
+  color: #fff;
+  font-family: 'FingerPaint', sans-serif;
+}
+
+.choose{
+  font-size: 88px;
+}
+.your{
+   font-size: 130px;
+  margin:0px;
+   margin-top: -64px;
+
+}
+
+.experience{
+  margin-left: 102px;
+  margin-top: 0px;
+  font-size: 50px;
+  line-height: 0;
+
+}
+
+
+
 .hill {
   position: absolute;
-  bottom: -70px;
+  bottom: -120px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -21,7 +51,7 @@
   width: 100vw;
   height: 25vh;
   left: -15vw;
-  bottom: 20vh;
+  bottom: 10vh;
   background-image: url('../assets/images/hill.png');
   filter: hue-rotate(260deg) saturate(.4)
 }
@@ -33,7 +63,7 @@
   width: 130vw;
   height: 45vh;
   left: -65vw;
-  bottom: -5vh;
+  bottom: -15vh;
   background-image: url('../assets/images/hill.png');
   filter: hue-rotate(320deg)  saturate(.4);
 }
