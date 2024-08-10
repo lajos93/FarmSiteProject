@@ -1,0 +1,44 @@
+.grass {
+    position: absolute;
+    bottom: 0%;
+    z-index: 9;
+
+    img {
+        position: absolute;
+
+        &:nth-child(1) {
+            position: relative;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            z-index: 1;
+            top: -25px;
+        }
+
+        &:nth-child(2) {
+            top: 5px;
+            right: 90px;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            z-index: 2;
+        }
+
+        &:nth-child(3) {
+            top: 15px;
+            left: 60px;
+            z-index: 3;
+            height: auto;
+            width: auto;
+            max-width: 400px;
+            max-height: 400px;
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+        }
+
+
+        &:last-child {
+            top: 30px;
+            right: 60px;
+            z-index: 4;
+            filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 20%));
+        }
+    }
+}

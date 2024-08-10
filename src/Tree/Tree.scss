@@ -4,65 +4,47 @@
     height: 70vw;
     max-height: 70vh;
     position: relative;
-    /*    left: 1200px; */
+    /* left: 1200px; */
     top: -45%;
     transform: translate(-50%, -50%);
     will-change: transform;
     backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
 
-}
-
-@media (min-width: 1000px) and (min-height: 768px) {
-    .tree {
+    @media (min-width: 1000px) and (min-height: 768px) {
         top: -20%;
     }
-}
 
-@media (min-width: 1000px) and (max-width: 1199px)
-
-/* and (max-height: 768px)  */
-/* and (min-height:540px)  */
-    {
-    .tree {
+    @media (min-width: 1000px) and (max-width: 1199px) {
+        /* and (max-height: 768px) */
+        /* and (min-height:540px) */
         left: 800px;
         top: -20%;
         transform: scale(0.8) translate(-50%, -50%);
-
     }
-}
 
-@media (min-width: 1200px) and (max-width: 1399px)
-
-/* and (max-height: 541x) and (min-height:760px)  */
-    {
-    .tree {
+    @media (min-width: 1200px) and (max-width: 1399px) {
+        /* and (max-height: 541px) and (min-height:760px) */
         left: 1000px;
         transform: scale(0.9) translate(-50%, -50%);
     }
-}
 
-@media (min-width: 1400px) {
-    .tree {
+    @media (min-width: 1400px) {
         left: 1200px;
     }
-}
 
-@media (min-width: 1600px) {
-    .tree {
+    @media (min-width: 1600px) {
         left: 1400px;
-
     }
-}
 
-@media (min-width: 1800px) {
-    .tree {
+    @media (min-width: 1800px) {
         left: 1600px;
-
     }
 }
 
 .trunk {
-    /*    width: 40px; */
+    /* width: 40px; */
     height: 640px;
     width: 640px;
     position: relative;
@@ -70,24 +52,21 @@
     background-image: url('../assets/images/tree_5_compressed.png');
     background-size: contain;
     background-repeat: no-repeat;
-
     margin: auto;
-    /*   margin-top: 150px; */
-    /*  transform: scale(.8); */
-
+    /* margin-top: 150px; */
+    /* transform: scale(.8); */
 }
 
 .leaves {
-    /*   background-color: red;
+    /* background-color: red;
     height: 20px;
     transform: scale(.8);
-    top:0px;
-    position:absolute;
+    top: 0px;
+    position: absolute;
     width: 100%;
     z-index: 11; */
 }
 
-/* Leaves */
 .leaf {
     width: 100px;
     height: 100px;
@@ -105,24 +84,50 @@
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: cover;
     font-size: 32px;
-}
 
-.leaf:hover{
-    filter: hue-rotate(0Deg);
-    cursor: pointer;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    font-size: 38px;
-    -moz-box-shadow: 13px 13px 0px 0px #FFFFFF;
-    -webkit-box-shadow: 13px 13px 0px 0px #FFFFFF;
-    box-shadow: 13px 13px 0px 0px  #FFFFFF;
+    &:hover {
+        filter: hue-rotate(0Deg);
+        cursor: pointer;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        font-size: 38px;
+        -moz-box-shadow: 13px 13px 0px 0px #FFFFFF;
+        -webkit-box-shadow: 13px 13px 0px 0px #FFFFFF;
+        box-shadow: 13px 13px 0px 0px #FFFFFF;
 
-}
+        img {
+            opacity: 1;
+        }
+    }
 
-.leaf.ver2 {
-    mask-image: url('../assets/images/leaf2.png');
-    -webkit-mask-image: url('../assets/images/leaf2.png');
-    /* For Safari */
+    &.ver2 {
+        mask-image: url('../assets/images/leaf2.png');
+        -webkit-mask-image: url('../assets/images/leaf2.png');
+        /* For Safari */
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .45;
+
+
+    }
+
+    &.large {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .text {
+            position: absolute;
+            z-index: 3;
+            color: #fff;
+            font-family: 'FingerPaint', sans-serif;
+        }
+
+    }
 }
 
 .mask-overlay {
@@ -139,49 +144,24 @@
     /* Ensure the overlay does not interfere with mouse events */
 }
 
-.leaf img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: .45;
-}
-
-.leaf:hover img{
-    opacity: 1;
-}
-
 .ver1 {
     background-image: url('../assets/images/leaf1.png');
     transition: width 0.1s, height 0.1s;
-}
 
-.ver1.large:hover{
-    width: 205px;
-    height: 205px;
+    &.large:hover {
+        width: 205px;
+        height: 205px;
+    }
 }
 
 .ver2 {
     background-image: url('../assets/images/leaf2.png');
     transition: width 0.1s, height 0.1s hi;
 
-}
-
-.ver2.large:hover{
-    width: 225px;
-    height: 225px;
-}
-
-.leaf.large, .leaf.large .text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.leaf.large .text{ 
-    position: absolute;     
-   
-    z-index: 3;
-    color: #fff;
-    font-family: 'FingerPaint', sans-serif;
+    &.large:hover {
+        width: 225px;
+        height: 225px;
+    }
 }
 
 /* Individual leaves */
@@ -223,10 +203,10 @@
     height: 200px;
     filter: hue-rotate(288deg);
 
-}
-
-.leaf5 img, .leaf5 div {
-    transform: rotate(35deg);
+    img,
+    div {
+        transform: rotate(35deg);
+    }
 }
 
 .leaf6 {
@@ -252,14 +232,20 @@
     height: 220px;
     filter: hue-rotate(68deg);
 
-}
-
-.leaf8 img, .leaf8 div  {
-    transform: rotate(-340deg);
+    img,
+    div {
+        transform: rotate(-340deg);
         width: 110%;
-    height: 110%;
-    margin-left: -20px;
-    margin-top: -10px;
+        height: 110%;
+        margin-left: -20px;
+        margin-top: -10px;
+    }
+
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .leaf9 {
@@ -269,8 +255,8 @@
     width: 200px;
     height: 200px;
 
-}
-
-.leaf9 img, .leaf9 div {
-    transform: rotate(-790deg);
+    img,
+    div {
+        transform: rotate(-790deg);
+    }
 }
