@@ -9,8 +9,6 @@
     transform: translate(-50%, -50%);
     will-change: transform;
     backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
 
     @media (min-width: 1000px) and (min-height: 768px) {
         top: -20%;
@@ -21,13 +19,13 @@
         /* and (min-height:540px) */
         left: 800px;
         top: -20%;
-        transform: scale(0.8) translate(-50%, -50%);
+       // transform: scale(0.8) translate(-50%, -50%);
     }
 
     @media (min-width: 1200px) and (max-width: 1399px) {
         /* and (max-height: 541px) and (min-height:760px) */
         left: 1000px;
-        transform: scale(0.9) translate(-50%, -50%);
+       // transform: scale(0.9) translate(-50%, -50%);
     }
 
     @media (min-width: 1400px) {

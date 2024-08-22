@@ -5,11 +5,14 @@ import "./Grass.scss"; // Import SCSS
 import kiwi from "../assets/images/kiwi.jpg";
 import teambuilding from "../assets/images/teambuilding.jpg";
 import beach from "../assets/images/beach.jpg";
-import grass from '../assets/images/grass.png'; 
+import grass from '../assets/images/grass/2.png'; 
 
 function Tree() {
   const Grass = () => (
     <div className="grass">
+      <img src={grass} alt="grass" />
+      <img src={grass} alt="grass" />
+      <img src={grass} alt="grass" />
       <img src={grass} alt="grass" />
       <img src={grass} alt="grass" />
       <img src={grass} alt="grass" />
