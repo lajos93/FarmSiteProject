@@ -6,6 +6,7 @@ import Tree from '../Tree/Tree';
 import hill from '../assets/images/hill.png';
 import tree from '../assets/images/tree.png'; */
 
+
 function Scene() {
   return (
     <div className="scene">
