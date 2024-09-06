@@ -1,0 +1,177 @@
+@import '../assets/scss/mixins.scss';
+
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  overflow-y: scroll;
+  /* Enable vertical scrolling */
+  overflow-x: hidden;
+  white-space: nowrap;
+  /* Prevent line breaks to allow horizontal scrolling */
+}
+
+.title-shop {
+  position: absolute;
+  bottom: 150px;
+
+  .main{
+    font-size: 88px;
+    margin-left: 102px;
+    margin-top: 0px;
+    line-height: 0;
+  }
+  .sub{
+    font-size: 50px;
+    margin-left: 102px;
+/*     margin-top: 0px;
+    line-height: 0; */
+  }
+
+  @include screen-size(tablet-landscape-up) {
+    right: 180px;
+  }
+
+  @include screen-size(desktop-up) {
+    right: 20px;
+  }
+
+  @include screen-size(big-desktop-up) {
+
+    right: 200px;
+  }
+
+  /* margin: 25px 45px 45px 0px; */
+  transform: scale(0.7);
+
+  @media (min-width: 1400px) {
+    margin: 120px;
+    transform: scale(1);
+  }
+}
+
+.text {
+  color: #fff;
+  font-family: 'FingerPaint', sans-serif;
+}
+
+.title {
+  position: absolute;
+  margin: -10px 45px 45px 45px;
+  transform: scale(0.8);
+
+  @media (min-width: 1400px) {
+    margin: 120px;
+    transform: scale(1);
+  }
+
+
+  .choose {
+    font-size: 88px;
+  }
+
+  .your {
+    font-size: 130px;
+    margin: 0px;
+    margin-top: -64px;
+
+  }
+
+  .experience {
+    margin-left: 102px;
+    margin-top: 0px;
+    font-size: 50px;
+    line-height: 0;
+    color: #48c45a;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: #fff;
+
+
+  }
+
+  .divider {
+    img{
+      width: 330px;
+    }
+  }
+  .produce{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .sub-text,.cart{
+      margin: 0 5px;
+    }
+
+    .cart{
+        width: 50px;
+        height: 40px;
+    }
+
+
+
+
+    .sub-text{
+      color: #e4d82f;
+      -webkit-text-stroke: .5px #a63636;
+      text-stroke: .5px #a63636;
+    }
+  }
+
+}
+
+
+.hill {
+  position: absolute;
+  bottom: -120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backHill {
+  width: 100vw;
+  height: 25vh;
+  left: -15vw;
+  bottom: 10vh;
+  background-image: url('../assets/images/hill.png');
+  filter: hue-rotate(260deg) saturate(.4)
+}
+
+
+
+
+.middleHill {
+  width: 130vw;
+  height: 45vh;
+  left: -65vw;
+  bottom: -15vh;
+  background-image: url('../assets/images/hill.png');
+  filter: hue-rotate(320deg) saturate(.4);
+}
+
+@media (max-width: 652px) {
+  .middleHill {
+    width: 160vw;
+    /* This will still apply the same formula for smaller screens */
+    height: 32vh;
+  }
+
+  .backHill {
+    width: 96vw;
+    height: 18vh;
+    left: 5vw;
+  }
+}
+
+.frontHill {
+  width: 150vw;
+  height: 50vh;
+  left: -15vw;
+  background-image: url('../assets/images/hill.png');
+  display: flex;
+  justify-content: flex-start;
+  filter: hue-rotate(0deg);
+}

@@ -1,3 +1,5 @@
+@import '../assets/scss/mixins.scss';
+
 .tree {
     width: 70vw;
     max-width: 70vh;
@@ -5,7 +7,7 @@
     max-height: 70vh;
     position: relative;
     /* left: 1200px; */
-    top: -45%;
+    top: -35%;
     transform: translate(-50%, -50%);
     will-change: transform;
     backface-visibility: hidden;
@@ -15,30 +17,50 @@
     }
 
     @media (min-width: 1000px) and (max-width: 1199px) {
-        /* and (max-height: 768px) */
-        /* and (min-height:540px) */
+        //left: 800px;
+        top: -20%;
+    }
+
+  /*    @include screen-size(phone-only) {    
+      font-size: 1rem; 
+    }
+    @include screen-size(tablet-portrait-up) {    
+        font-size: 1rem; 
+     } */
+     @include screen-size(tablet-landscape-up) {    
+        left: 900px;
+     }
+     @include screen-size(desktop-up) {    
+        left: 950px;
+     }
+     @include screen-size(big-desktop-up) {    
+        left: 1500px;
+     }
+
+/*     @media (min-width: 1000px) and (min-height: 768px) {
+        top: -20%;
+    }
+
+    @media (min-width: 1000px) and (max-width: 1199px) {
         left: 800px;
         top: -20%;
-       // transform: scale(0.8) translate(-50%, -50%);
     }
 
     @media (min-width: 1200px) and (max-width: 1399px) {
-        /* and (max-height: 541px) and (min-height:760px) */
-        left: 1000px;
-       // transform: scale(0.9) translate(-50%, -50%);
+        left: 800px;
     }
 
     @media (min-width: 1400px) {
-        left: 1200px;
+        left: 1000px;
     }
 
     @media (min-width: 1600px) {
-        left: 1400px;
+        left: 1200px;
     }
 
     @media (min-width: 1800px) {
-        left: 1600px;
-    }
+        left: 1400px;
+    } */
 }
 
 .trunk {
@@ -104,6 +126,12 @@
         /* For Safari */
     }
 
+    &.ver2-stroke {
+        mask-image: url('../assets/images/leaf2_stroke.png');
+        -webkit-mask-image: url('../assets/images/leaf2_stroke.png');
+        /* For Safari */
+    }
+
     img {
         width: 100%;
         height: 100%;
@@ -154,11 +182,31 @@
 
 .ver2 {
     background-image: url('../assets/images/leaf2.png');
+    transition: width 0.1s, height 0.1s;
+
+    &.large:hover {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+.ver1-stroke {
+    background-image: url('../assets/images/leaf1_stroke.png');
+    transition: width 0.1s, height 0.1s;
+
+    &.large:hover {
+        width: 205px;
+        height: 205px;
+    }
+}
+
+.ver2-stroke  {
+    background-image: url('../assets/images/leaf2_stroke.png');
     transition: width 0.1s, height 0.1s hi;
 
     &.large:hover {
-        width: 225px;
-        height: 225px;
+        width: 216px;
+        height: 260px;
     }
 }
 
@@ -223,11 +271,11 @@
 }
 
 .leaf8 {
-    top: 20px;
-    left: 230px;
+    top: -80px;
+    left: 145px;
     transform: rotate(340deg);
-    width: 220px;
-    height: 220px;
+    width: 236px;
+    height: 236px;
     filter: hue-rotate(68deg);
 
     img,
@@ -252,9 +300,90 @@
     transform: rotate(790deg);
     width: 200px;
     height: 200px;
+    filter: hue-rotate(294deg);
+
+
 
     img,
     div {
         transform: rotate(-790deg);
     }
 }
+
+.leaf10 {
+    top: -32px;
+    left: 392px;
+    width: 80px;
+    height: 80px;
+
+    img,
+    div {
+        transform: rotate(-790deg);
+    }
+}
+
+.leaf11 {
+    top: -60px;
+    left: 365px;
+    width: 60px;
+    height: 60px;
+    transform: rotate(-50deg);
+}
+
+
+//Fruits
+.fruits{
+    /* div{
+        filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+    } */
+    
+    .fruit-ver1 {
+        background-image: url('../assets/images/mandarin_inset.png');
+        transition: width 0.1s, height 0.1s;
+    }
+    
+    .fruit-ver2 {
+        background-image: url('../assets/images/persimmon_inset.png');
+        transition: width 0.1s, height 0.1s;
+    }
+
+    .butterly {
+        background-image: url('../assets/images/butterfly2.gif');
+        transition: width 0.1s, height 0.1s;
+    }
+    
+    .fruit {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        transform-origin: top;
+        z-index: 2;
+        background-size: cover;
+        font-size: 32px;
+    }
+    
+    .fruit1 {
+        top: 15px;
+        left: 370px;
+        transform: rotate(-30deg);
+        width: 50px;
+        height: 50px;
+    }
+    .fruit2 {
+        top: 70px;
+        left: 354px;
+        transform: rotate(-5deg);
+        width: 70px;
+        height:70px;
+    }
+
+    .animation {
+        top: 200px;
+        right: 310px;
+        transform: rotate(-5deg);
+        width: 200px;
+        height:138px;
+    }
+    
+}
+

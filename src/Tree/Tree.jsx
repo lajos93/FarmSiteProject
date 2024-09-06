@@ -3,9 +3,12 @@ import "./Tree.scss"; // Import SCSS
 import "./Grass.scss"; // Import SCSS
 
 import kiwi from "../assets/images/kiwi.jpg";
+import fruits from "../assets/images/fruits.jpg";
 import teambuilding from "../assets/images/teambuilding.jpg";
 import beach from "../assets/images/beach.jpg";
-import grass from '../assets/images/grass/2.png'; 
+import grass from "../assets/images/grass/2.png";
+import leaf1 from "../assets/images/leaf1.png";
+
 
 function Tree() {
   const Grass = () => (
@@ -22,7 +25,7 @@ function Tree() {
 
   return (
     <div className="tree">
-      <Grass/>
+         <Grass/> 
       <div className="trunk" />
       <div className="leaves">
         <div class="leaf leaf1 ver1"></div>
@@ -45,11 +48,22 @@ function Tree() {
         </div>
         <div class="leaf leaf9 ver1 large">
           <div className="text">
-            {" "}
-            <span style={{ whiteSpace: "pre-line" }}>Kiwi SHOP</span>
+            <span style={{ whiteSpace: "pre-line" }}>
+              Fruit
+              <br />
+              SHOP
+            </span>
           </div>
-          <img src={kiwi} alt="Kiwi Image" />
+          {/* <img src={kiwi} alt="Kiwi Image" /> */}
+          <img src={fruits} alt="Kiwi Image" />
         </div>
+        <div class="leaf leaf10 ver2"></div>
+        <div class="leaf leaf11 ver2"></div>
+      </div>
+      <div className="fruits">
+        <div className="fruit fruit1  fruit-ver1 "></div> 
+        <div className="fruit fruit2  fruit-ver2 "></div>
+        <div className="fruit animation  butterly "></div>
       </div>
     </div>
   );
