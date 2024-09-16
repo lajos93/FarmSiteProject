@@ -22,7 +22,7 @@ function Scene() {
           {" "}
           <img src={divider} />
         </div>
-        <div className="produce">
+        <div className="sub-produce">
           <h1 className="buy sub-text"> Buy </h1>
 
           <img className="cart" src={cart} />
