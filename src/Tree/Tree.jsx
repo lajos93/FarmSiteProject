@@ -28,25 +28,25 @@ function Tree() {
          <Grass/> 
       <div className="trunk" />
       <div className="leaves">
-        <div class="leaf leaf1 ver1"></div>
-        <div class="leaf leaf2 ver2"></div>
-        <div class="leaf leaf3 ver1 "></div>
-        <div class="leaf leaf4 ver2"></div>
-        <div class="leaf leaf5 ver1 large">
+        <div className="leaf leaf1 ver1"></div>
+        <div className="leaf leaf2 ver2"></div>
+        <div className="leaf leaf3 ver1 "></div>
+        <div className="leaf leaf4 ver2"></div>
+        <div className="leaf leaf5 ver1 large">
           <div className="text">
             <span style={{ whiteSpace: "pre-line" }}>Team Building </span>
           </div>
           <img src={teambuilding} alt="Teambuilding Image" />
         </div>
-        <div class="leaf leaf6 ver2"></div>
-        <div class="leaf leaf7 ver1"></div>
-        <div class="leaf leaf8 ver2 large">
+        <div className="leaf leaf6 ver2"></div>
+        <div className="leaf leaf7 ver1"></div>
+        <div className="leaf leaf8 ver2 large">
           <div className="text">
             <span>Beach</span>
           </div>
           <img src={beach} alt="Beach Image" />
         </div>
-        <div class="leaf leaf9 ver1 large">
+        <div className="leaf leaf9 ver1 large">
           <div className="text">
             <span style={{ whiteSpace: "pre-line" }}>
               Fruit
@@ -57,8 +57,8 @@ function Tree() {
           {/* <img src={kiwi} alt="Kiwi Image" /> */}
           <img src={fruits} alt="Kiwi Image" />
         </div>
-        <div class="leaf leaf10 ver2"></div>
-        <div class="leaf leaf11 ver2"></div>
+        <div className="leaf leaf10 ver2"></div>
+        <div className="leaf leaf11 ver2"></div>
       </div>
       <div className="fruits">
         <div className="fruit fruit1  fruit-ver1 "></div> 
