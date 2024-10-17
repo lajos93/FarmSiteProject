@@ -1,10 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./Scene.scss"; // Import SCSS
-import Tree from "../Tree/Tree";
+import Tree from "./Tree/Tree";
+
 // Import images
-/* import bg from '~@assets/images/bg.jpg';
-import hill from '~@assets/images/hill.png';
-import tree from '~@assets/images/tree.png'; */
 import divider from "@assets/images/divider-drawing.png";
 import cart from "@assets/images/cart.png";
 
