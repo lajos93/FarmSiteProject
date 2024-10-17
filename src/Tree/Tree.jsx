@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react";
 import "./Tree.scss"; // Import SCSS
 import "./Grass.scss"; // Import SCSS
 
-import kiwi from "../assets/images/kiwi.jpg";
-import fruits from "../assets/images/fruits.jpg";
-import teambuilding from "../assets/images/teambuilding.jpg";
-import beach from "../assets/images/beach.jpg";
-import grass from "../assets/images/grass/2.png";
-import leaf1 from "../assets/images/leaf1.png";
+import kiwi from "@assets/images/kiwi.jpg";
+import fruits from "@assets/images/fruits.jpg";
+import teambuilding from "@assets/images/teambuilding.jpg";
+import beach from "@assets/images/beach.jpg";
+import grass from "@assets/images/grass/2.png";
+import leaf1 from "@assets/images/leaf1.png";
 
 
 function Tree() {
